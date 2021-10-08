@@ -7,6 +7,7 @@ const buttonPress = document.getElementById('button');
 const answers = [];
 const wordPrompts = document.getElementById('word-prompts');
 const hideButton = document.getElementById('button');
+const message = document.getElementById('message');
 
 buttonPress.addEventListener('click', () => {
     for (let i = 1; i <= 13; i++) {
@@ -16,6 +17,7 @@ buttonPress.addEventListener('click', () => {
     }
     wordPrompts.classList.add('hide');
     hideButton.classList.add('hide');
+    message.textContent = 'Congratulations! You are accepted!';
 
     let text = `We are ${answers[1]} to inform you that you have been accepted at
     Hogwarts School of ${answers[2]} and ${answers[3]}.
@@ -35,7 +37,7 @@ PARENTS ARE REMINDED THAT FIRST YEARS
 
 ARE NOT ALLOWED THEIR OWN BROOMSTICK`;
     document.getElementById('harryPotterPassage').innerHTML = text;
-    console.log(text);
+
 });
 
 
