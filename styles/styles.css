@@ -24,9 +24,27 @@ header img {
     object-fit: contain;
 }
 
+section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: left;
+}
+
+section div {
+    padding: 10px;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+h2{
+    font-family
+    font-size: large;
+    align-content: center;
+
 }
 
 footer {
