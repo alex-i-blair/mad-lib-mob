@@ -1,9 +1,9 @@
-
 body {
     font-family: 'Harry Potter', sans-serif;
     background-color: #FFFCFA;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    
 }
 
 main {
@@ -32,10 +32,15 @@ section {
 }
 
 p {
-    background-image: '../assets/hpBackground.webp';
     line-height: 2em;
+    width: 100%;
+    
 }
-
+#scroll {
+    width: 80%;
+    align-items: center;
+    background-image: url("../assets/hpBackground.webp");
+}
 section div {
     padding: 10px;
 }
