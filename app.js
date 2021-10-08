@@ -2,11 +2,20 @@
 
 // reference needed DOM elements
 const blanks = [];
-]
+
+const buttonPress = document.getElementById('button');
+
+buttonPress.addEventListener('click', () => {
+
 for (let i = 1; i <= 13; i++) {
-    blanks[i] = document.getElementById(`blank-${i}`);
-    console.log(blank1.value);
+    
+    blanks[i] = document.getElementById(`blank-${i}`.value);
 }
+
+console.log(blanks);
+
+});
+
 
 
 
