@@ -5,6 +5,8 @@ const blanks = [];
 
 const buttonPress = document.getElementById('button');
 const answers = [];
+const wordPrompts = document.getElementById('word-prompts');
+const hideButton = document.getElementById('button');
 
 buttonPress.addEventListener('click', () => {
     for (let i = 1; i <= 13; i++) {
@@ -12,6 +14,9 @@ buttonPress.addEventListener('click', () => {
         blanks[i] = document.getElementById(`blank-${i}`);
         answers[i] = blanks[i].value;
     }
+    wordPrompts.classList.add('hide');
+    hideButton.classList.add('hide');
+
     let text = `We are ${answers[1]} to inform you that you have been accepted at
     Hogwarts School of ${answers[2]} and ${answers[3]}.
     Please find enclosed a list of all necessary books and equipment.
