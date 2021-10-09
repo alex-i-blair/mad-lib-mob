@@ -1,19 +1,26 @@
 body {
     font-family: 'Harry Potter', sans-serif;
     background-color: #FFFCFA;
+    background-image: url("../assets/scrollLong.jpg");
+    background-size: 200vh;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: auto 1fr auto;
     
 }
 
 main {
-    padding: 30px;
+    padding: 5px;
+    /* display: grid;
+    align-self: center;
+    grid-template-columns: auto 1fr auto; */
 }
 
 header {
-    background-color: #A2D7D2;
+    /* background-color: #919e9d3f; */
     height: 110px;
-    padding: 0 30px;
+    margin-top: 30px;
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +28,8 @@ header {
 
 header img {
     height: 100%;
+    margin-top: 30px;
+    border-radius: 50%;
     object-fit: contain;
 }
 
@@ -33,13 +42,13 @@ section {
 
 p {
     line-height: 2em;
+
     width: 100%;
     
 }
 #scroll {
     width: 80%;
-    align-items: center;
-    background-image: url("../assets/hpBackground.webp");
+
 }
 section div {
     padding: 10px;
@@ -51,7 +60,7 @@ h1 {
 }
 
 h2{
-    font-family
+    
     font-size: large;
     align-content: center;
 
